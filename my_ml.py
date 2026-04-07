@@ -1,8 +1,8 @@
-import pandas as pd
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.metrics import mean_absolute_error
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+import pandas as pd # type: ignore
+from sklearn.tree import DecisionTreeRegressor # type: ignore
+from sklearn.metrics import mean_absolute_error # type: ignore
+from sklearn.model_selection import train_test_split # type: ignore
+from sklearn.ensemble import RandomForestRegressor # type: ignore
 
 
 data_path = 'melb_data.csv'
