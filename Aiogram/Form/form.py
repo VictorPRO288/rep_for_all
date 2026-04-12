@@ -2,6 +2,8 @@ from aiogram.fsm.state import State, StatesGroup
 
 
 class Form(StatesGroup):
-    name = State()
+    first_name = State()
+    last_name = State()
     age = State()
-    email = State()
+    height = State()
+    weight = State()
