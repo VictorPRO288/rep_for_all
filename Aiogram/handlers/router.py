@@ -139,23 +139,3 @@ async def set_weight(message: Message, state: FSMContext):
     )
 
     await state.clear()
-
-
-# @router.message(Form.email, F.text)
-# async def finale_Form(message: Message, state: FSMContext):
-#     if "@" not in message.text or "." not in message.text:
-#         await message.answer("Некорректный email\nemail должен содржать @ и .")
-#         return
-
-#     await state.update_data(email=message.text)
-
-#     data = await state.get_data()
-#     name = data["name"]
-#     age = data["age"]
-#     email = data["email"]
-#     print(data)
-
-#     await message.answer(
-#         f"Анкета заполнена:\nИмя: {name}\nВозраст: {age}\nEmail: {email}\nЖелаете сохранить?"
-#     )
-#     await state.clear()
